@@ -14,15 +14,22 @@ def open_browser(context):
 
 
 @when(u'Input correct username')
-def input_username(context):
-    input_correct_username = context.driver.find_element(By.XPATH, "//*[@id='username']")
-    input_correct_username.send_keys('bipul513')
-    time.sleep(3)
-    context.driver.quit()
+def input_correct_username(context):
+    correct_username = context.driver.find_element(By.XPATH, "//*[@id='username']")
+    correct_username.send_keys('bipul513')
+    time.sleep(1)
 
 
 @when(u'correct password')
 def input_correct_password(context):
+    correct_password = context.driver.find_element(By.XPATH, "//*[@id='password']")
+    correct_password.send_keys('password')
+    time.sleep(3)
+    context.driver.quit()
+
+
+@when('click Login')
+def click_login(context):
     pass
 
 

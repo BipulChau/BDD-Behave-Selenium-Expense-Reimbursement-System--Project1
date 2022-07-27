@@ -3,4 +3,5 @@ Feature: ERS log in
     Given Employee is in the log in page
     When  Input correct username
     And correct password
+    And click Login
     Then redirect to logged in page
