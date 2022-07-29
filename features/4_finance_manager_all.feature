@@ -4,3 +4,4 @@ Feature: Action - approve/deny
     When clicks approve
     And clicks deny
     Then  That particular reimbursement should disappear from pending status
+    And logout
